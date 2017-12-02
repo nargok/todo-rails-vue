@@ -1,5 +1,19 @@
-<h1><%= @project.title %>のタスク一覧</h1>
 
-<div id="app">
-  ここにタスク一覧を表示する
+<div class="container">
+  <h1><%= @project.title %>のタスク一覧</h1>
+
+  <div id="app">
+    <form>
+      <input v-model="todo">
+      <input type="submit" value="追加" class="waves-effect waves-light btn">
+    </form>
+    <ul v-for="(item) in tasks">
+      <li>
+        {{ item }}
+      </li>
+    </ul>
+    <p>{{ todo }}</p>
+  </div>
 </div>
+
+<%= javascript_pack_tag 'todo' %>
