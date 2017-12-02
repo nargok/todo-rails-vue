@@ -19,6 +19,7 @@
 .byebug_history
 
 /.idea
+/.idea/vcs.xml
 /.idea *
 /public/system/*
 .rvmrc/public/packs
