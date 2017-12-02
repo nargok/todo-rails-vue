@@ -1,10 +1,12 @@
 <h1>Projects#index</h1>
 
-<div class="collection">
-  <a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
-  <a href="#!" class="collection-item">Alan<span class="new badge">4</span></a>
-  <a href="#!" class="collection-item">Alan</a>
-  <a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+<div class="row">
+  <div class="collection">
+    <% @projects.each do |project| %>
+      <%= link_to "#{project.title}", project, class: "collection-item" %>
+    <% end %>
+  </div>
 </div>
+
 
 <%= javascript_pack_tag 'hello_vue' %>
