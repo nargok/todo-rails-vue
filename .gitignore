@@ -21,4 +21,6 @@
 /.idea
 /.idea *
 /public/system/*
-.rvmrc
+.rvmrc/public/packs
+/public/packs-test
+/node_modules
