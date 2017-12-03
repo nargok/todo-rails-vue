@@ -1,7 +1,9 @@
 import Vue from 'vue'
+import Router from './router/router'
 import Header from './components/header.vue'
 
-new Vue({
+var app = new Vue({
+    router: Router,
     el: "#app",
     data: {
         todo: "",
