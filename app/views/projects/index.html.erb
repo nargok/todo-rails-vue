@@ -1,12 +1,15 @@
-<div class="container">
-  <h1>Projects#index</h1>
+<div id="app">
+  <navbar></navbar>
+  <div class="container">
+    <h1>Projects#index</h1>
 
-  <div class="collection">
-    <% @projects.each do |project| %>
-      <%= link_to "#{project.title}", project, class: "collection-item" %>
-    <% end %>
+    <div class="collection">
+      <% @projects.each do |project| %>
+          <%= link_to "#{project.title}", project, class: "collection-item" %>
+      <% end %>
+    </div>
   </div>
 </div>
 
 
-<%= javascript_pack_tag 'hello_vue' %>
+<%= javascript_pack_tag 'todo' %>
