@@ -1,18 +1,19 @@
 <div id="app">
 <navbar></navbar>
-<div class="container">
-  <h1><%= @project.title %>のタスク一覧</h1>
+  <div class="container">
+    <h1><%= @project.title %>のタスク一覧</h1>
+    <router-view></router-view>
 
-    <form>
-      <input v-model="todo">
-      <input type="submit" value="追加" class="waves-effect waves-light btn">
-    </form>
-    <ul v-for="(item) in tasks">
-      <li>
-        {{ item }}
-      </li>
-    </ul>
-    <p>{{ todo }}</p>
+    <!--<form>-->
+      <!--<input v-model="todo">-->
+      <!--<input type="submit" value="追加" class="waves-effect waves-light btn">-->
+    <!--</form>-->
+    <!--<ul v-for="(item) in tasks">-->
+      <!--<li>-->
+        <!--{{ item }}-->
+      <!--</li>-->
+    <!--</ul>-->
+    <!--<p>{{ todo }}</p>-->
   </div>
 </div>
 
